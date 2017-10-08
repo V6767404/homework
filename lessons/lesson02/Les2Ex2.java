@@ -1,6 +1,6 @@
 //if 
 
-//Ctrl-Shift-F - ïðèâåäåíèå êîäà
+//Ctrl-Shift-F - Ð¿Ñ€Ð¸Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð´Ð°
 
 
 public class Les2Ex2 {
@@ -20,8 +20,8 @@ public class Les2Ex2 {
 			System.out.println("hello2");
 		}
 
-		// if ( a > 10 && a > 20) - ëîãè÷åñêîå è
-		// if ( a > 10 || a > 20) - ëîãè÷åñêîå èëè
+		// if ( a > 10 && a > 20) - Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¸
+		// if ( a > 10 || a > 20) - Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¸Ð»Ð¸
 
 		/*
 		 * if (( a > 40 || a>10 ) && a > 30){ System.out.println("hello3"); { else {
