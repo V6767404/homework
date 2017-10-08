@@ -1,6 +1,6 @@
 import java.util.Scanner; // по нажатию подсказки подчеркивания или Scanner Ctrl Shift O
 
-// Scanner
+// Scanner 
 
 public class Les3Ex2 {
 
