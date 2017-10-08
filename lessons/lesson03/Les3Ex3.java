@@ -1,14 +1,14 @@
-//Math и random
+//Math Рё random
 
 public class Les3Ex3 {
 
 	public static void main(String[] args) {
 
 		/*
-		 * System.out.println(Math.pow(5,5)); // возведение в степень. результат double
-		 * System.out.println(Math.round(3.55)); //округление =4
-		 * System.out.println(Math.sqrt(121)); //квадратный корень. результат double
-		 * System.out.println(Math.abs(-56)); //абсолютное значение
+		 * System.out.println(Math.pow(5,5)); // РІРѕР·РІРµРґРµРЅРёРµ РІ СЃС‚РµРїРµРЅСЊ. СЂРµР·СѓР»СЊС‚Р°С‚ double
+		 * System.out.println(Math.round(3.55)); //РѕРєСЂСѓРіР»РµРЅРёРµ =4
+		 * System.out.println(Math.sqrt(121)); //РєРІР°РґСЂР°С‚РЅС‹Р№ РєРѕСЂРµРЅСЊ. СЂРµР·СѓР»СЊС‚Р°С‚ double
+		 * System.out.println(Math.abs(-56)); //Р°Р±СЃРѕР»СЋС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ
 		 */
 
 		// System.out.println(Math.random()); //[0;1)
@@ -20,23 +20,23 @@ public class Les3Ex3 {
 		System.out.println((int) (Math.random() * 9 + 1));
 		System.out.println((int) (Math.random() * 9 + 1));*/
 
-		System.out.println((int)( Math.random() * 22 - 11)); // [-10;10] (max -min +2)-(min+1)
-		System.out.println((int)( Math.random() * 22 - 11)); // для вывода с отрицательным диапозоном
+		System.out.println((int)( Math.random() * 22 - 11)); // [-10;10] (max -min +2)-(min -1)
+		System.out.println((int)( Math.random() * 22 - 11)); // РґР»СЏ РІС‹РІРѕРґР° СЃ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј РґРёР°РїРѕР·РѕРЅРѕРј
 		System.out.println((int)( Math.random() * 22 - 11)); 
 		System.out.println((int)( Math.random() * 22 - 11)); 
 		 
 		System.out.println("");
 	
-		System.out.println((int)( Math.random() * 21) - 10); //или так по старой формуле но со скобкой
+		System.out.println((int)( Math.random() * 21) - 10); //РёР»Рё С‚Р°Рє РїРѕ СЃС‚Р°СЂРѕР№ С„РѕСЂРјСѓР»Рµ РЅРѕ СЃРѕ СЃРєРѕР±РєРѕР№
 		System.out.println((int)( Math.random() * 21) - 10);
 		System.out.println((int)( Math.random() * 21) - 10);
 		System.out.println((int)( Math.random() * 21) - 10);
 		
 		System.out.println("");	
 	
-		System.out.println((int)( Math.random() * 21 - 10)); // здесь "-10" никогда не выпадет
+		System.out.println((int)( Math.random() * 21 - 10)); // Р·РґРµСЃСЊ "-10" РЅРёРєРѕРіРґР° РЅРµ РІС‹РїР°РґРµС‚
 		
-		/*System.out.println((int)(Math.random() * 21) - 10);    // [-10; 10]  (max - min + 2) - (min + 1)
+		/*System.out.println((int)(Math.random() * 21) - 10);    // [-10; 10] 
 		System.out.println((int)(Math.random() * 21) - 10);
 		System.out.println((int)(Math.random() * 21) - 10);
 		System.out.println((int)(Math.random() * 21) - 10);
