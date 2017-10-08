@@ -1,11 +1,11 @@
 
 public class MobilePhone {
 
-	public int cost; // поле класса
+	public int cost; // РїРѕР»Рµ РєР»Р°СЃСЃР°
 	public String model;
 
 	public void show() {
-		System.out.println(cost + " " + model); // метод
+		System.out.println(cost + " " + model); // РјРµС‚РѕРґ
 	}
 
 	/*
