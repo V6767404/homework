@@ -13,7 +13,7 @@ public class Page50Ex2 {
 			amount = amount + 1;
 
 		}
-		System.out.println("êîëè÷åñòâî=" + amount);
+		System.out.println("количество=" + amount);
 
 	}
 
