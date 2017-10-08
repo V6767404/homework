@@ -1,4 +1,4 @@
-import java.util.Scanner; // по нажатию подсказки подчеркивания или Scanner Ctrl Shift O
+import java.util.Scanner; // РїРѕ РЅР°Р¶Р°С‚РёСЋ РїРѕРґСЃРєР°Р·РєРё РїРѕРґС‡РµСЂРєРёРІР°РЅРёСЏ РёР»Рё Scanner Ctrl Shift O
 
 // Scanner
 
@@ -7,11 +7,12 @@ public class Les3Ex2 {
 	public static void main(String[] args) {
 		int a = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите значение");
+		System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ");
 		if (sc.hasNextInt()) {
-			a = sc.nextInt(); 	// NextDouble при вводе double с консоли нужно вводить с запятой а не с точкой
-		} 						//  NextLine- строка считывается
-		System.out.println("введеное значение = " + a);
+			a = sc.nextInt(); 	// NextDouble РїСЂРё РІРІРѕРґРµ double СЃ РєРѕРЅСЃРѕР»Рё РЅСѓР¶РЅРѕ РІРІРѕРґРёС‚СЊ СЃ Р·Р°РїСЏС‚РѕР№ Р° РЅРµ СЃ С‚РѕС‡РєРѕР№
+		} 						//  NextLine- СЃС‚СЂРѕРєР° СЃС‡РёС‚С‹РІР°РµС‚СЃСЏ
+		System.out.println("РІРІРµРґРµРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ = " + a);
 	}
 
 }
+
