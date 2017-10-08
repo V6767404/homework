@@ -2,7 +2,7 @@
 //выводите их (числа от 1 до 10).
 //1-нечетное
 //2-четное
-//И т.д
+//И т.д 
 
 public class Page48Ex1 {
 	public static void main(String[] args) {
