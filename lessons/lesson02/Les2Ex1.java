@@ -5,27 +5,27 @@ public class Les2Ex1 {
 
 		String s = "rweoirweoir oirweir roiwe";
 
-		// âñå òèïû äàííûõ ïðîøëè òåïåðü îïåðàòîðû
+		// Ð²ÑÐµ Ñ‚Ð¸Ð¿Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¿Ñ€Ð¾ÑˆÐ»Ð¸ Ñ‚ÐµÐ¿ÐµÑ€ÑŒ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‹
 		System.out.println(5 + 5);
 		System.out.println(5 - 5);
 		System.out.println(5 * 5);
-		System.out.println(5 / 2); // ïî äåôîëòó int
-		System.out.println(5 / 2.0); // ñäñü îäíî âåùåñòâåííîå è ðåçóëüòàò double
+		System.out.println(5 / 2); // Ð¿Ð¾ Ð´ÐµÑ„Ð¾Ð»Ñ‚Ñƒ int
+		System.out.println(5 / 2.0); // ÑÐ´ÑÑŒ Ð¾Ð´Ð½Ð¾ Ð²ÐµÑ‰ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ Ð¸ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ double
 		System.out.println(5 > 5);
 		System.out.println(5 < 5);
 		System.out.println(5 >= 5);
-		System.out.println(5 <= 5); // îïåðàòîðû ðàçäåëÿì ïðîáåëàìè ïî êîä êîíâåíøí
-		// Ctrl-Shift-F - àâòîìàòè÷åñêîå âûðàâíèâàèíå êîäà
+		System.out.println(5 <= 5); // Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‹ Ñ€Ð°Ð·Ð´ÐµÐ»ÑÐ¼ Ð¿Ñ€Ð¾Ð±ÐµÐ»Ð°Ð¼Ð¸ Ð¿Ð¾ ÐºÐ¾Ð´ ÐºÐ¾Ð½Ð²ÐµÐ½ÑˆÐ½
+		// Ctrl-Shift-F - Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð²Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð¸Ð½Ðµ ÐºÐ¾Ð´Ð°
 		
-		System.out.println(5 == 5); //ñðàâíåíèå , íå ïóòàòü ñ ïðèñâàèâàíèåì	
+		System.out.println(5 == 5); //ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ , Ð½Ðµ Ð¿ÑƒÑ‚Ð°Ñ‚ÑŒ Ñ Ð¿Ñ€Ð¸ÑÐ²Ð°Ð¸Ð²Ð°Ð½Ð¸ÐµÐ¼	
 		System.out.println(5 != 5);
 		
-		System.out.println(5 % 2); //îòñàòîê . õîðîøî äëÿ îïðåäåëåíèÿ ÷åòíîñòè
+		System.out.println(5 % 2); //Ð¾Ñ‚ÑÐ°Ñ‚Ð¾Ðº . Ñ…Ð¾Ñ€Ð¾ÑˆÐ¾ Ð´Ð»Ñ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¸Ñ Ñ‡ÐµÑ‚Ð½Ð¾ÑÑ‚Ð¸
 		
 		double d = 3.14;
 		int c = (int)d; 
 		System.out.println(c);
-		double f=a; //òàêîå áåç ïðèâåäåíèÿ ðàáîòàåò
+		double f=a; //Ñ‚Ð°ÐºÐ¾Ðµ Ð±ÐµÐ· Ð¿Ñ€Ð¸Ð²ÐµÐ´ÐµÐ½Ð¸Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚
 		
 		
 		
