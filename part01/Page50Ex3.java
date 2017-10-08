@@ -1,5 +1,5 @@
 //С помощью цикла for подсчитайте сумму всех четных чисел в
-//диапазоне от -20 до 20
+//диапазоне от -20 до 20 
 
 public class Page50Ex3 {
 	public static void main(String[] args) {
