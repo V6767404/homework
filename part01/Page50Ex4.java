@@ -1,4 +1,4 @@
-//Вывести все делители введенного числа
+//Вывести все делители введенного числа 
 
 public class Page50Ex4 {
 	public static void main(String[] args) {
