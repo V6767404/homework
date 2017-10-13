@@ -7,7 +7,7 @@ public class C4 extends Citroen {
 	public C4 (int cost, String model, String color, int weight) {
 		super(cost, model, color);
 		this.weight = weight;
-		this.model =model; //если не написать -не проинициализируется и будет null
+		this.model =model; //РµСЃР»Рё РЅРµ РЅР°РїРёСЃР°С‚СЊ - РЅРµ РїСЂРѕРёРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚СЃСЏ Рё Р±СѓРґРµС‚ null
 		
 		
 	}
