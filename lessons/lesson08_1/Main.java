@@ -9,7 +9,7 @@ public class Main {
 	//
 	// НАСЛЕДОВАНИЕ
 	// суперклассы и подклассы
-	// один класс наслудуется только от одного класса
+	// один класс наследуется только от одного класса
 
 	public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class Main {
 		Citroen citr = new Citroen (45, "hello", "white");
 		citr.show(); //?? white не печатает
 		
-		С4 c = new С4 (5,"qq","qqq",123);
+		C4 c = new C4 (5,"qq","qqq",123);
 		c.show();
 
 	}
