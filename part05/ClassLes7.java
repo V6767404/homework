@@ -6,38 +6,38 @@ public class ClassLes7 {
 	
 	public String[] smas;
 
-	// public ClassLes7(int n) { // êîíñòðóêòîð ñîçäàåò ìàññèâ ñòðîê çàäàííîé
-	// ðàçìåðíîñòè
+	// public ClassLes7(int n) { // конструктор создает массив строк заданной
+	// размерности
 	// smas = new String[n]; }
 
-	public String[] createMas() { // ñîçäàíèå ìàññèâà
-		System.out.println("Ââåäèòå ðàçìåðíîñòü íóæíîãî ìàññèâà ñòðîê");
+	public String[] createMas() { // создание массива
+		System.out.println("Введите размерность нужного массива строк");
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		smas = new String[n]; // îáúÿâëÿåì ìàññèâ
-		System.out.println("Ââîäèòå ñòðîêè. Êîíåö ñòðîêè - enter. Êîíåö ââîäà - end");
+		smas = new String[n]; // объявляем массив
+		System.out.println("Вводите строки. Конец строки - enter. Конец ввода - end");
 		Scanner scan = new Scanner(System.in);
 		String input;
 		int i = 0;
 		do {
 			input = scan.nextLine();
 			smas[i++] = input;
-		} while (!input.equals("end")); // åñëè ââåäåíàÿ ñòðîêà end - òî ââîä ïðåêðàùàåòñÿ
-		// çàïîëíÿåì îñòàâøèåñÿ ïîëÿ ìàññèâà
+		} while (!input.equals("end")); // если введеная строка end - то ввод прекращается
+		// заполняем оставшиеся поля массива
 		for (i = (i - 1); i < n; i++) {
-			smas[i] = "blabla"; // çäåñü íàäîáû çàïîëíèòü íîìåðàìè ñòðîê, íî íóæíà êîíâåðòàöèÿ öèôð â ñòðîêè - ïîäñêàæèòå êàê?
+			smas[i] = "blabla"; // здесь надобы заполнить номерами строк, но нужна конвертация цифр в строки - подскажите как?
 		}
 
 		return smas;
 
-		// System.out.println("Ââîäèòå ñòðîêè. Êîíåö ñòðîêè - enter. Êîíåö ââîäà -
+		// System.out.println("Вводите строки. Конец строки - enter. Конец ввода -
 		// end");
 		// for (int i = 0; i < smas.length; i++) {
 		// Scanner s = new Scanner(System.in);
 		// smas[i] = s.nextLine();
 		// }
 		// return mas;
-		// 
+		//
 
 	}
 }
