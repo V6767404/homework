@@ -6,38 +6,38 @@ public class ClassLes7 {
 	
 	public String[] smas;
 
-	// public ClassLes7(int n) { // конструктор создает массив строк заданной
-	// размерности
+	// public ClassLes7(int n) { // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г±Г®Г§Г¤Г ГҐГІ Г¬Г Г±Г±ГЁГў Г±ГІГ°Г®ГЄ Г§Г Г¤Г Г­Г­Г®Г©
+	// Г°Г Г§Г¬ГҐГ°Г­Г®Г±ГІГЁ
 	// smas = new String[n]; }
 
-	public String[] createMas() { // создание массива
-		System.out.println("Введите размерность нужного массива строк");
+	public String[] createMas() { // Г±Г®Г§Г¤Г Г­ГЁГҐ Г¬Г Г±Г±ГЁГўГ 
+		System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г°Г Г§Г¬ГҐГ°Г­Г®Г±ГІГј Г­ГіГ¦Г­Г®ГЈГ® Г¬Г Г±Г±ГЁГўГ  Г±ГІГ°Г®ГЄ");
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		smas = new String[n]; // объявляем массив
-		System.out.println("Вводите строки. Конец строки - enter. Конец ввода - end");
+		smas = new String[n]; // Г®ГЎГєГїГўГ«ГїГҐГ¬ Г¬Г Г±Г±ГЁГў
+		System.out.println("Г‚ГўГ®Г¤ГЁГІГҐ Г±ГІГ°Г®ГЄГЁ. ГЉГ®Г­ГҐГ¶ Г±ГІГ°Г®ГЄГЁ - enter. ГЉГ®Г­ГҐГ¶ ГўГўГ®Г¤Г  - end");
 		Scanner scan = new Scanner(System.in);
 		String input;
 		int i = 0;
 		do {
 			input = scan.nextLine();
 			smas[i++] = input;
-		} while (!input.equals("end")); // если введеная строка end - то ввод прекращается
-		// заполняем оставшиеся поля массива
+		} while (!input.equals("end")); // ГҐГ±Г«ГЁ ГўГўГҐГ¤ГҐГ­Г Гї Г±ГІГ°Г®ГЄГ  end - ГІГ® ГўГўГ®Г¤ ГЇГ°ГҐГЄГ°Г Г№Г ГҐГІГ±Гї
+		// Г§Г ГЇГ®Г«Г­ГїГҐГ¬ Г®Г±ГІГ ГўГёГЁГҐГ±Гї ГЇГ®Г«Гї Г¬Г Г±Г±ГЁГўГ 
 		for (i = (i - 1); i < n; i++) {
-			smas[i] = "blabla"; // здесь надобы заполнить номерами строк, но нужна конвертация цифр в строки - подскажите как?
+			smas[i] = "blabla"; // Г§Г¤ГҐГ±Гј Г­Г Г¤Г®ГЎГ» Г§Г ГЇГ®Г«Г­ГЁГІГј Г­Г®Г¬ГҐГ°Г Г¬ГЁ Г±ГІГ°Г®ГЄ, Г­Г® Г­ГіГ¦Г­Г  ГЄГ®Г­ГўГҐГ°ГІГ Г¶ГЁГї Г¶ГЁГґГ° Гў Г±ГІГ°Г®ГЄГЁ - ГЇГ®Г¤Г±ГЄГ Г¦ГЁГІГҐ ГЄГ ГЄ?
 		}
 
 		return smas;
 
-		// System.out.println("Вводите строки. Конец строки - enter. Конец ввода -
+		// System.out.println("Г‚ГўГ®Г¤ГЁГІГҐ Г±ГІГ°Г®ГЄГЁ. ГЉГ®Г­ГҐГ¶ Г±ГІГ°Г®ГЄГЁ - enter. ГЉГ®Г­ГҐГ¶ ГўГўГ®Г¤Г  -
 		// end");
 		// for (int i = 0; i < smas.length; i++) {
 		// Scanner s = new Scanner(System.in);
 		// smas[i] = s.nextLine();
 		// }
 		// return mas;
-		//
+		// 
 
 	}
 }
