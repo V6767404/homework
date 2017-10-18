@@ -13,7 +13,7 @@ public class ClassLes7 {
 	public String[] createMas() { // создание массива
 		System.out.println("Введите размерность нужного массива строк");
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
+		int n = sc.nextInt();  
 		smas = new String[n]; // объявляем массив
 		System.out.println("Вводите строки. Конец строки - enter. Конец ввода - end");
 		Scanner scan = new Scanner(System.in);
@@ -23,21 +23,14 @@ public class ClassLes7 {
 			input = scan.nextLine();
 			smas[i++] = input;
 		} while (!input.equals("end")); // если введеная строка end - то ввод прекращается
-		// заполняем оставшиеся поля массива
+		// заполняем оставшиеся поля массива числами номеров строк
 		for (i = (i - 1); i < n; i++) {
-			smas[i] = "blabla"; // здесь надобы заполнить номерами строк, но нужна конвертация цифр в строки - подскажите как?
+			smas[i] = String.valueOf(i); // число int преобразовываем в строку
 		}
 
 		return smas;
 
-		// System.out.println("Вводите строки. Конец строки - enter. Конец ввода -
-		// end");
-		// for (int i = 0; i < smas.length; i++) {
-		// Scanner s = new Scanner(System.in);
-		// smas[i] = s.nextLine();
-		// }
-		// return mas;
-		//
-
+		
 	}
 }
+
