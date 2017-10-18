@@ -4,7 +4,7 @@ package homework.part07;
 // Создаёте метод в этом классе, который создаёт и заполняем массив. Массив создаёт 
 // из количества элементов от 5 до 15.
 // Заполняем массив элементами из диапазона от -5 до +5.
-// Создаём метод, котоырй принимает оба этих массива и начинает их делить.
+// Создаём метод, который принимает оба этих массива и начинает их делить.
 // Делим следующим образом: первый элемент первого массива делим на первый элемент второго массива и ТД.
 // 
 // В итоге получаем косяки, которые нужно обработать. 
@@ -37,29 +37,42 @@ public class Class2 {
 		System.out.println();
 	}
 
-	public static void divMas(int[] mas1, int[] mas2) { // метод деления двух массивов
+	public static void divMas(int[] mas1, int[] mas2) { // метод деления двух массивов,
 
-		int n = (mas1.length >= mas2.length) ? mas1.length : mas2.length; // если n присвоить длинну более длинного
-																			// массива будет переполнение
+		// mas1.int n = (mas1.length >= mas2.length) ? mas1.length : mas2.length;
+		int[] tempmas;
+		int n;
+		if (mas1.length >= mas2.length) {
+			n = mas1.length;
+			tempmas = mas1;
+		} else {
+			n = mas2.length;
+			tempmas = mas2;
+		}
+
 		int[] res = new int[n];
 		int temp = 0;
+		boolean cheak = false;
 
-		try {
-
-			for (int i = 0; i < n; i++) {
-				temp = i;
+		for (int i = 0; i < n; i++) {
+			temp = i;
+			try {
 				res[i] = mas1[i] / mas2[i];
+			} catch (ArithmeticException e) {
+				System.out.println("деление на ноль по индексу = " + temp);
+
+			} catch (ArrayIndexOutOfBoundsException e) {
+				cheak = true;
+				System.out.println("переполнение массива по индексу = "+ temp); 
+				break; //УСЕ
+				
 
 			}
 
-		} catch (ArithmeticException e) {
-			System.out.println("деление на ноль по индексу = "+temp);
-			
-
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("переполнение массива");
-			
-
+		}
+		if (cheak) { //продолжение для ошибки переполнение массива
+			for (int j = temp; j < n; j++) {
+			 res[j] = tempmas[j]/2; }
 		}
 		showMas(res);
 	}
