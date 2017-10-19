@@ -52,7 +52,7 @@ public class Class2 {
 
 		int[] res = new int[n];
 		int temp = 0;
-		boolean cheak = false;
+		boolean check = false;
 
 		for (int i = 0; i < n; i++) {
 			temp = i;
@@ -62,7 +62,7 @@ public class Class2 {
 				System.out.println("деление на ноль по индексу = " + temp);
 
 			} catch (ArrayIndexOutOfBoundsException e) {
-				cheak = true;
+				check = true;
 				System.out.println("переполнение массива по индексу = "+ temp); 
 				break; //УСЕ
 				
@@ -70,7 +70,7 @@ public class Class2 {
 			}
 
 		}
-		if (cheak) { //продолжение для ошибки переполнение массива
+		if (check) { //продолжение для ошибки переполнение массива
 			for (int j = temp; j < n; j++) {
 			 res[j] = tempmas[j]/2; }
 		}
