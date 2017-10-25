@@ -7,15 +7,15 @@ import java.sql.Statement;
 
 public class DB {
 	
-	private Connection cn; //îáúåêò connection (èíòåðôåéñ)
-	private Statement st; //îáúåêò òèïà äàííûõ Statement â êîòîðîì íàõ. ìåòîäû îòïðàâêè çàïðîñîâ executeUpdate 
+	private Connection cn; //объект connection (интерфейс)
+	private Statement st; //объект типа данных Statement в котором нах. методы отправки запросов executeUpdate 
 
-	public DB(String url, String name, String login, String password){ //	êîíñòðóêòîð - ñðàçó áóäåò óñòàíîâëåíî ñîåäèòåíèå ñ ÁÄ
+	public DB(String url, String name, String login, String password){ //	конструктор - сразу будет установлено соедитение с БД
 		try {
-			Class.forName("com.mysql.jdbc.Driver"); 	//ïóòü ê êëàññó Driver â ïîäêëþ÷åííîì connector
+			Class.forName("com.mysql.jdbc.Driver"); 	//путь к классу Driver в подключенном connector
 			
-			cn = DriverManager.getConnection(url+name, login, password); 	//ñîåäèíåíèå ñ ÁÄ
-			st = cn.createStatement(); 	//îáúåêò, êîòîðûé ïîçâîëèò îòïðàâëÿòü çàïðîñû â ÁÄ
+			cn = DriverManager.getConnection(url+name, login, password); 	//соединение с БД
+			st = cn.createStatement(); 	//объект, который позволит отправлять запросы в БД
 		
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -24,7 +24,7 @@ public class DB {
 		}
 	}
 	
-	public void update(String sql){ //sql - ýòî ñòðîêà çàïðîñà â ÁÄ. ýòîò ìåòîä áóäåò îòïðàâëÿòü òîëüêî òå çàïðîñû êîòîðûå íå âîçâðàùàþò ðåçóëüòàòû
+	public void update(String sql){ //sql - это строка запроса в БД. этот метод будет отправлять только те запросы которые не возвращают результаты
 		try {
 			st.executeUpdate(sql);
 		} catch (SQLException e) {
@@ -33,7 +33,7 @@ public class DB {
 	}
 	
 	public ResultSet query(String sql){
-		ResultSet rs = null; //åñëè èç ÁÄ ïðèõîäèò èíôîðìàöèÿ îíà âñåãäà ñîõðàíÿåòñÿ â ResultSet 
+		ResultSet rs = null; //если из БД приходит информация она всегда сохраняется в ResultSet
 		try {
 			rs = st.executeQuery(sql);
 		} catch (SQLException e) {
@@ -45,7 +45,7 @@ public class DB {
 	public void showTable(ResultSet rs){
 		try {
 			
-			ResultSetMetaData rsmd = rs.getMetaData(); //ñîçäàíèå îáúåòà rsmd
+			ResultSetMetaData rsmd = rs.getMetaData(); //создание объета rsmd
 			for(int i = 1; i <= rsmd.getColumnCount(); i++){
 				System.out.print(rsmd.getColumnName(i) + "\t");
 			}
