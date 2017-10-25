@@ -7,15 +7,15 @@ import java.sql.Statement;
 
 public class DB {
 	
-	private Connection cn; //объект connection (интерфейс)
-	private Statement st; //объект типа данных Statement в котором нах. методы отправки запросов executeUpdate 
+	private Connection cn; //РѕР±СЉРµРєС‚ connection (РёРЅС‚РµСЂС„РµР№СЃ)
+	private Statement st; //РѕР±СЉРµРєС‚ С‚РёРїР° РґР°РЅРЅС‹С… Statement РІ РєРѕС‚РѕСЂРѕРј РЅР°С…. РјРµС‚РѕРґС‹ РѕС‚РїСЂР°РІРєРё Р·Р°РїСЂРѕСЃРѕРІ executeUpdate 
 
-	public DB(String url, String name, String login, String password){ //	конструктор - сразу будет установлено соедитение с БД
+	public DB(String url, String name, String login, String password){ //	РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ - СЃСЂР°Р·Сѓ Р±СѓРґРµС‚ СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ СЃРѕРµРґРёС‚РµРЅРёРµ СЃ Р‘Р”
 		try {
-			Class.forName("com.mysql.jdbc.Driver"); 	//путь к классу Driver в подключенном connector
+			Class.forName("com.mysql.jdbc.Driver"); 	//РїСѓС‚СЊ Рє РєР»Р°СЃСЃСѓ Driver РІ РїРѕРґРєР»СЋС‡РµРЅРЅРѕРј connector
 			
-			cn = DriverManager.getConnection(url+name, login, password); 	//соединение с БД
-			st = cn.createStatement(); 	//объект, который позволит отправлять запросы в БД
+			cn = DriverManager.getConnection(url+name, login, password); 	//СЃРѕРµРґРёРЅРµРЅРёРµ СЃ Р‘Р”
+			st = cn.createStatement(); 	//РѕР±СЉРµРєС‚, РєРѕС‚РѕСЂС‹Р№ РїРѕР·РІРѕР»РёС‚ РѕС‚РїСЂР°РІР»СЏС‚СЊ Р·Р°РїСЂРѕСЃС‹ РІ Р‘Р”
 		
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -24,7 +24,7 @@ public class DB {
 		}
 	}
 	
-	public void update(String sql){ //sql - это строка запроса в БД. этот метод будет отправлять только те запросы которые не возвращают результаты
+	public void update(String sql){ //sql - СЌС‚Рѕ СЃС‚СЂРѕРєР° Р·Р°РїСЂРѕСЃР° РІ Р‘Р”. СЌС‚РѕС‚ РјРµС‚РѕРґ Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»СЏС‚СЊ С‚РѕР»СЊРєРѕ С‚Рµ Р·Р°РїСЂРѕСЃС‹ РєРѕС‚РѕСЂС‹Рµ РЅРµ РІРѕР·РІСЂР°С‰Р°СЋС‚ СЂРµР·СѓР»СЊС‚Р°С‚С‹
 		try {
 			st.executeUpdate(sql);
 		} catch (SQLException e) {
@@ -33,7 +33,7 @@ public class DB {
 	}
 	
 	public ResultSet query(String sql){
-		ResultSet rs = null; //если из БД приходит информация она всегда сохраняется в ResultSet
+		ResultSet rs = null; //РµСЃР»Рё РёР· Р‘Р” РїСЂРёС…РѕРґРёС‚ РёРЅС„РѕСЂРјР°С†РёСЏ РѕРЅР° РІСЃРµРіРґР° СЃРѕС…СЂР°РЅСЏРµС‚СЃСЏ РІ ResultSet
 		try {
 			rs = st.executeQuery(sql);
 		} catch (SQLException e) {
@@ -45,7 +45,7 @@ public class DB {
 	public void showTable(ResultSet rs){
 		try {
 			
-			ResultSetMetaData rsmd = rs.getMetaData(); //создание объета rsmd
+			ResultSetMetaData rsmd = rs.getMetaData(); //СЃРѕР·РґР°РЅРёРµ РѕР±СЉРµС‚Р° rsmd
 			for(int i = 1; i <= rsmd.getColumnCount(); i++){
 				System.out.print(rsmd.getColumnName(i) + "\t");
 			}
