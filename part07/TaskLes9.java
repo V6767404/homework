@@ -6,8 +6,8 @@ public class TaskLes9 {
 
 		ClassLes9 cl = new ClassLes9();
 
-		int[] mas1 = cl.createMas(); // создаем первый массив
-		int[] mas2 = cl.createMas(); // создаем второй массив
+		int[] mas1 = cl.createMas(); // СЃРѕР·РґР°РµРј РїРµСЂРІС‹Р№ РјР°СЃСЃРёРІ
+		int[] mas2 = cl.createMas(); // СЃРѕР·РґР°РµРј РІС‚РѕСЂРѕР№ РјР°СЃСЃРёРІ
 		ClassLes9.showMas(mas1);
 		ClassLes9.showMas(mas2);
 		ClassLes9.divMas(mas1,mas2);
