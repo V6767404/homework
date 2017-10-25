@@ -9,7 +9,7 @@ public class Main {
 		WorkDB.createDB("jdbc:mysql://127.0.0.1/", "shop", "root", "root");
 		
 		
-	//	DB db = new DB("jdbc:mysql://127.0.0.1/", "shop", "root", "root"); //подключение (connection из конструктора) к имеющейся БД
+	//	DB db = new DB("jdbc:mysql://127.0.0.1/", "shop", "root", "root"); //РїРѕРґРєР»СЋС‡РµРЅРёРµ (connection РёР· РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°) Рє РёРјРµСЋС‰РµР№СЃСЏ Р‘Р”
 
 		/*db.update("CREATE DATABASE shop");
 		db.update("USE shop");
