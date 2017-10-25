@@ -5,8 +5,8 @@ public class Task2 {
 
 		Class2 cl = new Class2();
 
-		int[] mas1 = cl.createMas(); // создаем первый массив
-		int[] mas2 = cl.createMas(); // создаем второй массив
+		int[] mas1 = cl.createMas(); // СЃРѕР·РґР°РµРј РїРµСЂРІС‹Р№ РјР°СЃСЃРёРІ
+		int[] mas2 = cl.createMas(); // СЃРѕР·РґР°РµРј РІС‚РѕСЂРѕР№ РјР°СЃСЃРёРІ
 		
 		Class2.showMas(mas1);
 		Class2.showMas(mas2);
