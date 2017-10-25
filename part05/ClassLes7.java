@@ -6,26 +6,28 @@ public class ClassLes7 {
 	
 	public String[] smas;
 
-	// public ClassLes7(int n) { // РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃРѕР·РґР°РµС‚ РјР°СЃСЃРёРІ СЃС‚СЂРѕРє Р·Р°РґР°РЅРЅРѕР№
-	// СЂР°Р·РјРµСЂРЅРѕСЃС‚Рё
+	// public ClassLes7(int n) { // конструктор создает массив строк заданной
+	// размерности
 	// smas = new String[n]; }
 
-	public String[] createMas() { // СЃРѕР·РґР°РЅРёРµ РјР°СЃСЃРёРІР°
-		System.out.println("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РЅСѓР¶РЅРѕРіРѕ РјР°СЃСЃРёРІР° СЃС‚СЂРѕРє");
+	public String[] createMas() { // создание массива
+		System.out.println("Введите размерность нужного массива строк");
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();  
-		smas = new String[n]; // РѕР±СЉСЏРІР»СЏРµРј РјР°СЃСЃРёРІ
-		System.out.println("Р’РІРѕРґРёС‚Рµ СЃС‚СЂРѕРєРё. РљРѕРЅРµС† СЃС‚СЂРѕРєРё - enter. РљРѕРЅРµС† РІРІРѕРґР° - end");
+		smas = new String[n]; // объявляем массив
+		System.out.println("Вводите строки. Конец строки - enter. Конец ввода - end");
 		Scanner scan = new Scanner(System.in);
 		String input;
 		int i = 0;
 		do {
 			input = scan.nextLine();
 			smas[i++] = input;
-		} while (!input.equals("end")); // РµСЃР»Рё РІРІРµРґРµРЅР°СЏ СЃС‚СЂРѕРєР° end - С‚Рѕ РІРІРѕРґ РїСЂРµРєСЂР°С‰Р°РµС‚СЃСЏ
-		// Р·Р°РїРѕР»РЅСЏРµРј РѕСЃС‚Р°РІС€РёРµСЃСЏ РїРѕР»СЏ РјР°СЃСЃРёРІР° С‡РёСЃР»Р°РјРё РЅРѕРјРµСЂРѕРІ СЃС‚СЂРѕРє
+		} while (!input.equals("end")); // если введеная строка end - то ввод прекращается
+		// заполняем оставшиеся поля массива числами номеров строк
+		//.contains - вместо equals 
 		for (i = (i - 1); i < n; i++) {
-			smas[i] = String.valueOf(i); // С‡РёСЃР»Рѕ int РїСЂРµРѕР±СЂР°Р·РѕРІС‹РІР°РµРј РІ СЃС‚СЂРѕРєСѓ
+			smas[i] = String.valueOf(i); // число int преобразовываем в строку
+			//другой вариант smas[i]=Integer.toString(i+1)
 		}
 
 		return smas;
@@ -33,4 +35,3 @@ public class ClassLes7 {
 		
 	}
 }
-
