@@ -7,15 +7,15 @@ import java.sql.Statement;
 
 public class DB {
 	
-	private Connection cn; //объект connection (интерфейс)
-	private Statement st; //объект типа данных Statement в котором нах. методы отправки запросов executeUpdate 
+	private Connection cn; //Г®ГЎГєГҐГЄГІ connection (ГЁГ­ГІГҐГ°ГґГҐГ©Г±)
+	private Statement st; //Г®ГЎГєГҐГЄГІ ГІГЁГЇГ  Г¤Г Г­Г­Г»Гµ Statement Гў ГЄГ®ГІГ®Г°Г®Г¬ Г­Г Гµ. Г¬ГҐГІГ®Г¤Г» Г®ГІГЇГ°Г ГўГЄГЁ Г§Г ГЇГ°Г®Г±Г®Гў executeUpdate 
 
-	public DB(String url, String name, String login, String password){ //	конструктор - сразу будет установлено соедитение с БД
+	public DB(String url, String name, String login, String password){ //	ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° - Г±Г°Г Г§Гі ГЎГіГ¤ГҐГІ ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­Г® Г±Г®ГҐГ¤ГЁГІГҐГ­ГЁГҐ Г± ГЃГ„
 		try {
-			Class.forName("com.mysql.jdbc.Driver"); 	//путь к классу Driver в подключенном connector
+			Class.forName("com.mysql.jdbc.Driver"); 	//ГЇГіГІГј ГЄ ГЄГ«Г Г±Г±Гі Driver Гў ГЇГ®Г¤ГЄГ«ГѕГ·ГҐГ­Г­Г®Г¬ connector
 			
-			cn = DriverManager.getConnection(url+name, login, password); 	//соединение с БД
-			st = cn.createStatement(); 	//объект, который позволит отправлять запросы в БД
+			cn = DriverManager.getConnection(url+name, login, password); 	//Г±Г®ГҐГ¤ГЁГ­ГҐГ­ГЁГҐ Г± ГЃГ„
+			st = cn.createStatement(); 	//Г®ГЎГєГҐГЄГІ, ГЄГ®ГІГ®Г°Г»Г© ГЇГ®Г§ГўГ®Г«ГЁГІ Г®ГІГЇГ°Г ГўГ«ГїГІГј Г§Г ГЇГ°Г®Г±Г» Гў ГЃГ„
 		
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -24,7 +24,7 @@ public class DB {
 		}
 	}
 	
-	public void update(String sql){ //sql - это строка запроса в БД. этот метод будет отправлять только те запросы которые не возвращают результаты
+	public void update(String sql){ //sql - ГЅГІГ® Г±ГІГ°Г®ГЄГ  Г§Г ГЇГ°Г®Г±Г  Гў ГЃГ„. ГЅГІГ®ГІ Г¬ГҐГІГ®Г¤ ГЎГіГ¤ГҐГІ Г®ГІГЇГ°Г ГўГ«ГїГІГј ГІГ®Г«ГјГЄГ® ГІГҐ Г§Г ГЇГ°Г®Г±Г» ГЄГ®ГІГ®Г°Г»ГҐ Г­ГҐ ГўГ®Г§ГўГ°Г Г№Г ГѕГІ Г°ГҐГ§ГіГ«ГјГІГ ГІГ»
 		try {
 			st.executeUpdate(sql);
 		} catch (SQLException e) {
@@ -33,7 +33,7 @@ public class DB {
 	}
 	
 	public ResultSet query(String sql){
-		ResultSet rs = null; //если из БД приходит информация она всегда сохраняется в ResultSet
+		ResultSet rs = null; //ГҐГ±Г«ГЁ ГЁГ§ ГЃГ„ ГЇГ°ГЁГµГ®Г¤ГЁГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї Г®Г­Г  ГўГ±ГҐГЈГ¤Г  Г±Г®ГµГ°Г Г­ГїГҐГІГ±Гї Гў ResultSet 
 		try {
 			rs = st.executeQuery(sql);
 		} catch (SQLException e) {
@@ -45,7 +45,7 @@ public class DB {
 	public void showTable(ResultSet rs){
 		try {
 			
-			ResultSetMetaData rsmd = rs.getMetaData(); //создание объета rsmd
+			ResultSetMetaData rsmd = rs.getMetaData(); //Г±Г®Г§Г¤Г Г­ГЁГҐ Г®ГЎГєГҐГІГ  rsmd
 			for(int i = 1; i <= rsmd.getColumnCount(); i++){
 				System.out.print(rsmd.getColumnName(i) + "\t");
 			}
