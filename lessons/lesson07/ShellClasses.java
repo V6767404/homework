@@ -32,7 +32,7 @@ public class ShellClasses {
 			 
 			 System.out.println(sb.toString());
 			 
-			 System.out.println(sb); // выводит тоже что и предыдуш и в чем сымсл?
+			 System.out.println(sb); // РІС‹РІРѕРґРёС‚ С‚РѕР¶Рµ С‡С‚Рѕ Рё РїСЂРµРґС‹РґСѓС€ Рё РІ С‡РµРј СЃС‹РјСЃР»?
 			// String s = sb.toString();
 			 
 
@@ -41,24 +41,24 @@ public class ShellClasses {
 		//	 String s2 = new String("helLo");
 			 
 		//	 System.out.println(s1.equals(s2)); 
-		//	 System.out.println(s1.replace('l', '@')); //замена симвода на символ
-		//	 System.out.println(s1.replace("ll", "!!!!!!!!!!!!!!!!!!!!!")); // замена части строки на часть
-		//	 System.out.println(s1.substring(10, 20));//возвращает кусок строки из нашей строки 
-		//	 System.out.println(s1.indexOf("a", 7)); //возвращает индекс определённого элемента по символу ? 
-		//	 System.out.println(s1.charAt(2));  //возвращает символ по его индексу
+		//	 System.out.println(s1.replace('l', '@')); //Р·Р°РјРµРЅР° СЃРёРјРІРѕРґР° РЅР° СЃРёРјРІРѕР»
+		//	 System.out.println(s1.replace("ll", "!!!!!!!!!!!!!!!!!!!!!")); // Р·Р°РјРµРЅР° С‡Р°СЃС‚Рё СЃС‚СЂРѕРєРё РЅР° С‡Р°СЃС‚СЊ
+		//	 System.out.println(s1.substring(10, 20));//РІРѕР·РІСЂР°С‰Р°РµС‚ РєСѓСЃРѕРє СЃС‚СЂРѕРєРё РёР· РЅР°С€РµР№ СЃС‚СЂРѕРєРё 
+		//	 System.out.println(s1.indexOf("a", 7)); //РІРѕР·РІСЂР°С‰Р°РµС‚ РёРЅРґРµРєСЃ РѕРїСЂРµРґРµР»С‘РЅРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РїРѕ СЃРёРјРІРѕР»Сѓ ? 
+		//	 System.out.println(s1.charAt(2));  //РІРѕР·РІСЂР°С‰Р°РµС‚ СЃРёРјРІРѕР» РїРѕ РµРіРѕ РёРЅРґРµРєСЃСѓ
 			 
-		//	 String [] mas = s1.split(" "); //разделяет строку на подстроки и заполняет массив строк
+		//	 String [] mas = s1.split(" "); //СЂР°Р·РґРµР»СЏРµС‚ СЃС‚СЂРѕРєСѓ РЅР° РїРѕРґСЃС‚СЂРѕРєРё Рё Р·Р°РїРѕР»РЅСЏРµС‚ РјР°СЃСЃРёРІ СЃС‚СЂРѕРє
 		//	 System.out.println(mas[2]);
 			 
 		//	 System.out.println(s1.indexOf("sssss"));
 			 
 
 			
-	/*		//проверим есть ли в пароле цифры и заглавые буквы
+	/*		//РїСЂРѕРІРµСЂРёРј РµСЃС‚СЊ Р»Рё РІ РїР°СЂРѕР»Рµ С†РёС„СЂС‹ Рё Р·Р°РіР»Р°РІС‹Рµ Р±СѓРєРІС‹
 			
 			 String password = "fdkjfdg43gf"; 
 			 
-			 char [] mas = password.toCharArray();  //преобразование строки в массив символов
+			 char [] mas = password.toCharArray();  //РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ СЃС‚СЂРѕРєРё РІ РјР°СЃСЃРёРІ СЃРёРјРІРѕР»РѕРІ
 			 boolean bol1 = false, bol2 = false;
 			 
 			 for(int i = 0; i < mas.length; i++){ 
@@ -92,13 +92,13 @@ public class ShellClasses {
 			 Integer in = new Integer(56); 
 			 Integer in2 = new Integer(56);
 			 System.out.println(a+a);
-			 System.out.println(in+in2); // тоже 112 в чем глубокий смысл здесь Intiger ?
+			 System.out.println(in+in2); // С‚РѕР¶Рµ 112 РІ С‡РµРј РіР»СѓР±РѕРєРёР№ СЃРјС‹СЃР» Р·РґРµСЃСЊ Intiger ?
 */			  
 			/* String s = "54364";
 			 
-			 int aa = Integer.parseInt(s); //преобразует строку вчисло //54364
+			 int aa = Integer.parseInt(s); //РїСЂРµРѕР±СЂР°Р·СѓРµС‚ СЃС‚СЂРѕРєСѓ РІС‡РёСЃР»Рѕ //54364
 			 
-			 int g = Integer.valueOf("45"); //преобразует число в строку  - в чем отличие?
+			 int g = Integer.valueOf("45"); //РїСЂРµРѕР±СЂР°Р·СѓРµС‚ С‡РёСЃР»Рѕ РІ СЃС‚СЂРѕРєСѓ  - РІ С‡РµРј РѕС‚Р»РёС‡РёРµ?
 			  
 			 System.out.println(aa);
 			 System.out.println(g);*/
