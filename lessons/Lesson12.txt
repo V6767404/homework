@@ -1,0 +1,58 @@
+Lesson 12							
+	базы данных						
+							
+	рел€ционные бд						
+	сервер бд mysql						
+	mysql это програмка						
+	sql - €зык запросов						
+							
+	дублируем дл€ проекта				регистраци€		
+				1	авторизаци€	users	
+						primary kay	столбец со всеми уникальными значени€ми
+						foreign key	столбец который хранит только те знач котор есть в первич ключе
+							
+					mysql сервер скачать		
+					dev.mysql.server		
+					community server		
+							
+					root		
+							
+					службы		
+					mysql		
+						VARCHAR если текст до 255 символов	
+	SHOW DATABASES;						
+	DROP DATABASE shop;	удалить базу данных shop;				CHAR	65535
+	CREATE DATABASE shop;	USE shop;	bcgjkmpjd			VARCHAR	65535
+	CREATE TABLE  users (id user INT AUTO_INCREMENT,  login VARCHAR (30) UNIQUE, pasword VARCHAR(30) NOT NULL, role INT(1) DEFALT1, del_st INT(1) DEFAULT 1, PRIMARY KEY (id_user));					TEXT	
+	SHOW TABLES;						
+	CREATE TABLE  orders (id_order INT AUTO_INCREMENT,						
+	id_user INT,						
+	cost INT(5);						
+	PRIMARY KEY (id_order),						
+	FOREIGN KEY (id_user) REFERENCES user (id_user));						
+							
+	DESCRIBE users;						
+	заполн€ем таблицу						
+	USE shop;						
+	INSERT INTO users VALUE (1, 'aaaa', 'aaa', 1,1);						
+	INSERT INTO users VALUE (2, 'aaaa', 'aaa', 1,1);						
+							
+	просмотреть содержимое таблицы						
+	SELECT * FROM users;		SELECT id_user, login FROM users;				
+							
+	INSERT INTO users (login, password) VALUES ('aaa4', 'aaa');						
+							
+	SELECT * FROM users WHERE login = 'aaaa3';						
+	SELECT * FROM users WHERE login = 'aaaa3'; AND id_user =3;						
+							
+	редактирование						
+							
+	UPDATE users SET login = 'admin', passwortd ='admin' WHERE id_user =2;						
+							
+	удалить						
+	DELETE FROm users WHERE id_user =2;						
+							
+	добавить столбец						
+	ALTER TABLE users ADD COLUMN gg INT AFTER login;						
+							
+	ALTER TABLE users DROP COLUMN gg;						

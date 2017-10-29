@@ -1,0 +1,32 @@
+Lesson 13	ShopInternet			
+				
+	драйвер - программа позвл€юща€ установить св€зь между двум€ приложени€ми			
+	Project -Build Path - Add External Archive			
+	указываем путь к конектору			
+	mysql-connector-java			
+	ччтобы установить соединение с базой данных необходимо вызвать метод getConnection			
+	update отправл€ет только те запросы которые не возвращают результаты			
+	вс€ информаци€ из Ѕд сохр€н€етс€ в ResultSet			
+				
+Lesson 14				
+	Entity	Dao		
+				
+	таблица в java будет хранитс€ в объекте			
+	классы сущности  - entity классы			
+	каждой таблице создаетс€ по NTT классу			
+				
+				
+	protected виден в пределах одного пакета			
+				
+	все entity класы имеют пол€ private чтобы задействовать getter setter			
+	второе правило - в entity класе должен быть пустой конструтор полюбому			
+	об€з-но переопредилить класы hashcod equals toString			
+				
+	jdbc java database connection			
+				
+Lesson 15	swing			
+				
+	ƒќѕ»—јЋ»  в метог Get в DaoUsers			
+				
+	создали пакет frames			
+				Ctrl пробел - просматривать все методы
