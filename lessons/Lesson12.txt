@@ -1,27 +1,27 @@
 Lesson 12							
-	базы данных						
+	Р±Р°Р·С‹ РґР°РЅРЅС‹С…						
 							
-	реляционные бд						
-	сервер бд mysql						
-	mysql это програмка						
-	sql - язык запросов						
+	СЂРµР»СЏС†РёРѕРЅРЅС‹Рµ Р±Рґ						
+	СЃРµСЂРІРµСЂ Р±Рґ mysql						
+	mysql СЌС‚Рѕ РїСЂРѕРіСЂР°РјРєР°						
+	sql - СЏР·С‹Рє Р·Р°РїСЂРѕСЃРѕРІ						
 							
-	дублируем для проекта				регистрация		
-				1	авторизация	users	
-						primary kay	столбец со всеми уникальными значениями
-						foreign key	столбец который хранит только те знач котор есть в первич ключе
+	РґСѓР±Р»РёСЂСѓРµРј РґР»СЏ РїСЂРѕРµРєС‚Р°				СЂРµРіРёСЃС‚СЂР°С†РёСЏ		
+				1	Р°РІС‚РѕСЂРёР·Р°С†РёСЏ	users	
+						primary kay	СЃС‚РѕР»Р±РµС† СЃРѕ РІСЃРµРјРё СѓРЅРёРєР°Р»СЊРЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё
+						foreign key	СЃС‚РѕР»Р±РµС† РєРѕС‚РѕСЂС‹Р№ С…СЂР°РЅРёС‚ С‚РѕР»СЊРєРѕ С‚Рµ Р·РЅР°С‡ РєРѕС‚РѕСЂ РµСЃС‚СЊ РІ РїРµСЂРІРёС‡ РєР»СЋС‡Рµ
 							
-					mysql сервер скачать		
+					mysql СЃРµСЂРІРµСЂ СЃРєР°С‡Р°С‚СЊ		
 					dev.mysql.server		
 					community server		
 							
 					root		
 							
-					службы		
+					СЃР»СѓР¶Р±С‹		
 					mysql		
-						VARCHAR если текст до 255 символов	
+						VARCHAR РµСЃР»Рё С‚РµРєСЃС‚ РґРѕ 255 СЃРёРјРІРѕР»РѕРІ	
 	SHOW DATABASES;						
-	DROP DATABASE shop;	удалить базу данных shop;				CHAR	65535
+	DROP DATABASE shop;	СѓРґР°Р»РёС‚СЊ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… shop;				CHAR	65535
 	CREATE DATABASE shop;	USE shop;	bcgjkmpjd			VARCHAR	65535
 	CREATE TABLE  users (id user INT AUTO_INCREMENT,  login VARCHAR (30) UNIQUE, pasword VARCHAR(30) NOT NULL, role INT(1) DEFALT1, del_st INT(1) DEFAULT 1, PRIMARY KEY (id_user));					TEXT	
 	SHOW TABLES;						
@@ -32,12 +32,12 @@ Lesson 12
 	FOREIGN KEY (id_user) REFERENCES user (id_user));						
 							
 	DESCRIBE users;						
-	заполняем таблицу						
+	Р·Р°РїРѕР»РЅСЏРµРј С‚Р°Р±Р»РёС†Сѓ						
 	USE shop;						
 	INSERT INTO users VALUE (1, 'aaaa', 'aaa', 1,1);						
 	INSERT INTO users VALUE (2, 'aaaa', 'aaa', 1,1);						
 							
-	просмотреть содержимое таблицы						
+	РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ С‚Р°Р±Р»РёС†С‹						
 	SELECT * FROM users;		SELECT id_user, login FROM users;				
 							
 	INSERT INTO users (login, password) VALUES ('aaa4', 'aaa');						
@@ -45,14 +45,14 @@ Lesson 12
 	SELECT * FROM users WHERE login = 'aaaa3';						
 	SELECT * FROM users WHERE login = 'aaaa3'; AND id_user =3;						
 							
-	редактирование						
+	СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ						
 							
 	UPDATE users SET login = 'admin', passwortd ='admin' WHERE id_user =2;						
 							
-	удалить						
+	СѓРґР°Р»РёС‚СЊ						
 	DELETE FROm users WHERE id_user =2;						
 							
-	добавить столбец						
+	РґРѕР±Р°РІРёС‚СЊ СЃС‚РѕР»Р±РµС†						
 	ALTER TABLE users ADD COLUMN gg INT AFTER login;						
 							
 	ALTER TABLE users DROP COLUMN gg;						
