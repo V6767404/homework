@@ -10,7 +10,7 @@ public class Biginteger01 {
     public static void main(String[] args) {
 
         Biginteger01 fibo = new Biginteger01();
-        int n = 4;
+        int n = 1000;
         System.out.println("Фибоначи ряда "  +n+ " ="+ fibo.fastB(n));
 
     }
