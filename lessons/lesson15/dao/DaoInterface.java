@@ -1,6 +1,6 @@
 package by.tc.booking.dao;
 
-//универсальный 
+//СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ 
 public interface DaoInterface <T>{ 
 	
 	public abstract void insert(T ob);
